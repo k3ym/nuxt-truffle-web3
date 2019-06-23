@@ -1,10 +1,13 @@
 <template>
   <section class="container">
     <div>
-      <h1>Get symbol</h1>
-      <p>symbol={{ symbol }}</p>
-      <button @click="addCount">Count up</button>
-      <button @click="getSymbol">Count up</button>
+      <h1>Symbol</h1>
+      <form>
+        Token ID:
+        <input type="number" name="tokenId" placeholder="input token id" />
+      </form>
+      <p>symbol:{{ symbol }}</p>
+      <button @click="getSymbol">Get symbol</button>
     </div>
   </section>
 </template>
